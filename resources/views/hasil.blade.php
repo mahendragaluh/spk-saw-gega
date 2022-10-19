@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="mt-4 page-header">
-            <h3 class="page-title"> Perankingan </h3>
+            <h3 class="page-title"> Perangkingan </h3>
         </div>
         <div class="row">
             <div class="col-md-12">
