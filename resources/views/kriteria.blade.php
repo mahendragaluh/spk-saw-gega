@@ -18,6 +18,22 @@
                             <input type="text" class="form-control" id="" placeholder="Nama Kriteria">
                         </div>
                         <div class="form-group">
+                            <label>Atribut Kriteria</label>
+                            <select name="attribute"
+                                    id=""
+                                    class="form-control">
+    
+                            @php
+                                $arr = ['BENEFIT', 'COST']
+                            @endphp
+                            <option value="0" selected disabled>Pilih</option>
+    
+                            @foreach ($arr as $item)
+                                <option value="{{ $item }}">{{ $item }}</option>
+                            @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label for="">Bobot</label>
                             <input type="text" class="form-control" id="" placeholder="Bobot">
                         </div>
@@ -34,12 +50,14 @@
                                 <tr>
                                     <th> Kode Kriteria </th>
                                     <th> Nama Kriteria </th>
+                                    <th> Attribute </th>
                                     <th> Bobot </th>
                                     <th> Aksi </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td>Done</td>
                                     <td>Done</td>
                                     <td>Done</td>
                                     <td>Done</td>
